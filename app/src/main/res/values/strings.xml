@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">TalkTeeth</string>
+    <string name="title">TalkTeeth</string>
+    <string name="tag">App to manage your dental workflow</string>
+    <string name="new_doctor">New Doctor</string>
+    <string name="clinic_info">Clinic Info</string>
+    <string name="picker_data">Pickers Data</string>
+    <string name="new_patient">New Patient</string>
+    <string name="todo">To Do List</string>
+    <string name="appoinment">Appoinments</string>
+    <string name="accounts">Accounting</string>
+    <string name="doctor_details">Doctor Details</string>
+    <string name="patient_file">Patient File</string>
+    <string name="home">Home</string>
+    <string name="share">Share</string>
+    <string name="rateus">Rate Us</string>
 </resources>

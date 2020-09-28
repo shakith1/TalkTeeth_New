@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/icon_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_doctor"
+            android:icon="@drawable/icon_doctor"
+            android:title="@string/new_doctor" />
+        <item
+            android:id="@+id/nav_patient"
+            android:icon="@drawable/icon_tooth"
+            android:title="@string/new_patient" />
+        <item
+            android:id="@+id/nav_to_do"
+            android:icon="@drawable/icon_to_do_list"
+            android:title="@string/todo" />
+        <item
+            android:id="@+id/nav_clinic"
+            android:icon="@drawable/icon_users"
+            android:title="@string/clinic_info" />
+        <item
+            android:id="@+id/nav_appoinment"
+            android:icon="@drawable/icon_appointment"
+            android:title="@string/appoinment" />
+        <item
+            android:id="@+id/nav_patient_files"
+            android:icon="@drawable/icon_loupe"
+            android:title="@string/patient_file" />
+        <item
+            android:id="@+id/nav_pickers_data"
+            android:icon="@drawable/icon_refresh"
+            android:title="@string/picker_data" />
+        <item
+            android:id="@+id/nav_doctor_details"
+            android:icon="@drawable/icon_files"
+            android:title="@string/doctor_details" />
+        <item
+            android:id="@+id/nav_accounting"
+            android:icon="@drawable/icon_accounts"
+            android:title="@string/accounts" />
+
+    </group>
+
+    <item android:title="Share">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/icon_share"
+                    android:title="@string/share" />
+                <item
+                    android:id="@+id/nav_rate_us"
+                    android:icon="@drawable/icon_star"
+                    android:title="@string/rateus" />
+            </group>
+        </menu>
+
+    </item>
+</menu>
