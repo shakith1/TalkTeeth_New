@@ -2,9 +2,14 @@ package com.example.talkteeth;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,7 +19,7 @@ import android.widget.LinearLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class Dashboard extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class Dashboard extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     //Drawer Menu
 
@@ -22,6 +27,12 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
     NavigationView navigationView;
     ImageView menuIcon;
     LinearLayout contentView;
+
+    public SectionStatePagerAdapter sectionStatePagerAdapter;
+    SectionStatePagerAdapter adapter;
+    ViewPager viewPager;
+
+    int fragmentNubmer;
 
     static final float END_SCALE = 0.7f;
 
@@ -36,9 +47,30 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
         menuIcon = findViewById(R.id.menu_image);
         contentView = findViewById(R.id.content);
 
+        sectionStatePagerAdapter = new SectionStatePagerAdapter(getSupportFragmentManager());
+        viewPager = (ViewPager) findViewById(R.id.container);
+
         navigationDrawer();
+
+        setUpViewPager(viewPager);
+
     }
 
+    // Set the fragments to the container fragment
+    private void setUpViewPager(ViewPager viewPager){
+        SectionStatePagerAdapter adapter = new SectionStatePagerAdapter(getSupportFragmentManager());
+        adapter.addFragment(new Home(),"Home");
+        adapter.addFragment(new add_doctor(),"Add Doctor");
+
+        viewPager.setAdapter(adapter);
+    }
+
+    public void setViewPager(int fragmentNumber){
+        this.fragmentNubmer = fragmentNumber;
+        viewPager.setCurrentItem(fragmentNumber);
+    }
+
+    // Navigation Drawer
     private void navigationDrawer() {
 
         //Navigation Drawer
@@ -89,12 +121,32 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
 
         if (drawerLayout.isDrawerVisible(GravityCompat.START)) {
             drawerLayout.closeDrawer((GravityCompat.START));
-        } else
+        } else if(fragmentNubmer == 0)
             super.onBackPressed();
+        else
+            setViewPager(fragmentNubmer - 1);
+
     }
+
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+
+        Fragment fragment;
+ //       FragmentTransaction transaction = getFragmentManager().beginTransaction();
+
+        switch (menuItem.getItemId()){
+            case R.id.nav_home :
+                break;
+            case R.id.add_doctor:
+                fragment = new add_doctor();
+                setViewPager(1);
+//                transaction.replace(R.id.content, fragment);
+//                transaction.addToBackStack(null);
+//                transaction.commit();
+                break;
+        }
         return true;
     }
+
 }
