@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".doctorList"
+    android:background="@drawable/background">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doctor Details"
+            android:textSize="23sp"
+            android:fontFamily="@font/cantata_one"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:paddingBottom="30dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/relativebackground">
+
+            <TextView
+                android:id="@+id/name_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Name      :  Dilshan Sulakshana"
+                android:textSize="18sp"
+                app:fontFamily="@font/spinnaker" />
+                />
+
+            <TextView
+                android:id="@+id/address_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address  :  65/B,Dawamottawa\n
+                   Andiambalama."
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                app:fontFamily="@font/spinnaker"
+                android:layout_below="@id/name_list"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age         :   32"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                app:fontFamily="@font/spinnaker"
+                android:layout_below="@id/address_list"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icons8_edit_48"
+                android:layout_alignParentRight="true"
+                android:layout_margin="35dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icons8_delete_bin_48"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="90dp"
+                android:layout_marginRight="35dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/relativebackground"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/name_list1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Name      :  Shakith Nimsara"
+                android:textSize="18sp"
+                app:fontFamily="@font/spinnaker" />
+                />
+
+            <TextView
+                android:id="@+id/address_list1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address  :  225/3,Temple Road\n
+                   Negombo."
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                app:fontFamily="@font/spinnaker"
+                android:layout_below="@id/name_list1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age         :   25"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                app:fontFamily="@font/spinnaker"
+                android:layout_below="@id/address_list1"/>
+
+            <TextView
+                android:id="@+id/doctor_details_edit_doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icons8_edit_48"
+                android:layout_alignParentRight="true"
+                android:layout_margin="35dp"/>
+
+            <TextView
+                android:id="@+id/doctor_details_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icons8_delete_bin_48"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="90dp"
+                android:layout_marginRight="35dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

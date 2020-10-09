@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "46843878950",
+    "firebase_url": "https://talkteeth-e68e2.firebaseio.com",
+    "project_id": "talkteeth-e68e2",
+    "storage_bucket": "talkteeth-e68e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46843878950:android:0de2ea6556704eb04190e7",
+        "android_client_info": {
+          "package_name": "com.example.talkteeth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46843878950-4p1svi56epo5bcehgutb2js4uv1n5eam.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.talkteeth",
+            "certificate_hash": "1e7343d5608cefe96e95fe4b77996a766b6691da"
+          }
+        },
+        {
+          "client_id": "46843878950-ihs6oq2vimmhj5kostmsipc5o9ojig37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDl9nceYsUsRPxvmpbM7yuiEhCSNp5rf1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46843878950-ihs6oq2vimmhj5kostmsipc5o9ojig37.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

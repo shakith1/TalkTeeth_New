@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/add_doctor"
+            android:text="Edit Doctor"
             android:textSize="23sp"
             app:fontFamily="@font/cantata_one"
             android:textAlignment="center"
@@ -49,6 +49,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:text="Shakith"
                     android:background="@null"
                     android:textColor="@color/colorBlack" />
 
@@ -72,6 +73,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@null"
+                    android:text="Nimsara"
                     android:textColor="@color/colorBlack" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -96,6 +98,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@null"
+                    android:text="02/05/1995"
                     android:textColor="@color/colorBlack" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -118,6 +121,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@null"
+                    android:text="25"
                     android:textColor="@color/colorBlack"
                     android:inputType="number" />
 
@@ -141,6 +145,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@null"
+                    android:text="225/3, Temple Road, Negombo."
                     android:textColor="@color/colorBlack" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -163,6 +168,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@null"
+                    android:text="Bsc.Kelaniya"
                     android:textColor="@color/colorBlack" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -185,6 +191,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@null"
+                    android:text="nimsara@gmail.com"
                     android:textColor="@color/colorBlack" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -207,16 +214,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@null"
+                    android:text="0768856084"
                     android:textColor="@color/colorBlack"
                     android:inputType="number" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id="@+id/add_doctor_save"
+                android:id="@+id/edit_doctor_update"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
-                android:text="Save"
+                android:text="Update"
                 app:fontFamily="@font/krona_one"
                 android:layout_marginTop="30dp"
                 android:layout_gravity="center"

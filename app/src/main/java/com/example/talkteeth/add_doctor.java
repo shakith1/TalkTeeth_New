@@ -1,6 +1,8 @@
 package com.example.talkteeth;
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -12,6 +14,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
 
@@ -28,6 +31,7 @@ public class add_doctor extends Fragment {
 
     TextInputEditText date;
     DatePickerDialog.OnDateSetListener dateSetListener;
+    Button save;
 
     public add_doctor() {
         // Required empty public constructor
@@ -47,6 +51,8 @@ public class add_doctor extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         date = (TextInputEditText) view.findViewById(R.id.birthday_text);
+
+        save = (Button) view.findViewById(R.id.add_doctor_save);
 
         date.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,6 +81,32 @@ public class add_doctor extends Fragment {
                 date.setText(dateSet);
             }
         };
+
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+
+                builder.setCancelable(true);
+                builder.setTitle("Data Saved");
+                builder.setMessage("Data Saved Successfully...");
+
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        ((Dashboard)getActivity()).setViewPager(2);
+                    }
+                });
+                builder.show();
+            }
+        });
 
     }
 }

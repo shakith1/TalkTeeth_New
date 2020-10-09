@@ -61,7 +61,8 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
         SectionStatePagerAdapter adapter = new SectionStatePagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new Home(),"Home");
         adapter.addFragment(new add_doctor(),"Add Doctor");
-
+        adapter.addFragment(new doctorList(),"Doctor List");
+        adapter.addFragment(new edit_doctor(),"Edit Doctor");
         viewPager.setAdapter(adapter);
     }
 
@@ -123,6 +124,8 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
             drawerLayout.closeDrawer((GravityCompat.START));
         } else if(fragmentNubmer == 0)
             super.onBackPressed();
+        else if(fragmentNubmer == 2)
+            setViewPager(0);
         else
             setViewPager(fragmentNubmer - 1);
 
