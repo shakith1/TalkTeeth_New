@@ -64,6 +64,7 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
         adapter.addFragment(new doctorList(),"Doctor List");
         adapter.addFragment(new edit_doctor(),"Edit Doctor");
         adapter.addFragment(new clinic_info(),"Clinic Info");
+        adapter.addFragment(new pickers_data(),"Pickers Data");
         viewPager.setAdapter(adapter);
     }
 
@@ -130,6 +131,8 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
         else if(fragmentNubmer == 3)
             setViewPager(2);
         else if(fragmentNubmer == 4)
+            setViewPager(0);
+        else if(fragmentNubmer == 5)
             setViewPager(0);
         else
             setViewPager(fragmentNubmer - 1);
