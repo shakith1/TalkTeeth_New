@@ -17,7 +17,7 @@ import android.widget.Button;
  */
 public class Home extends Fragment {
 
-    CardView add_doctor,doctor_details;
+    CardView add_doctor,doctor_details, patient_files;
 
     public Home() {
         // Required empty public constructor
@@ -32,6 +32,8 @@ public class Home extends Fragment {
 
         add_doctor = (CardView) view.findViewById(R.id.add_doctor);
         doctor_details = (CardView) view.findViewById(R.id.doctor_details);
+        patient_files = (CardView) view.findViewById(R.id.patient_file);
+
 
         add_doctor.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +48,14 @@ public class Home extends Fragment {
                 ((Dashboard)getActivity()).setViewPager(2);
             }
         });
+
+        patient_files.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((Dashboard)getActivity()).setViewPager(7);
+            }
+        });
+
         return view;
     }
 

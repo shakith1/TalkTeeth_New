@@ -63,6 +63,11 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
         adapter.addFragment(new add_doctor(),"Add Doctor");
         adapter.addFragment(new doctorList(),"Doctor List");
         adapter.addFragment(new edit_doctor(),"Edit Doctor");
+        adapter.addFragment(new add_operation(), "Add Operation");
+        adapter.addFragment(new teethImage(), "Teeth Details");
+        adapter.addFragment(new operation_details(), "Operation Details");
+        adapter.addFragment(new patient_files(), "Patient Files");
+        adapter.addFragment(new photo_library(), "Photo Library");
         viewPager.setAdapter(adapter);
     }
 

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".patient_files" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linearbackground">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="98dp"
+                android:layout_height="59dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/medical_appointment" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="105dp"
+                android:layout_height="53dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="6dp"
+                android:layout_toEndOf="@+id/imageView3"
+                android:layout_toRightOf="@+id/imageView3"
+                android:src="@drawable/icon_users" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="57dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_toEndOf="@+id/imageView7"
+                android:layout_toRightOf="@+id/imageView7"
+                android:src="@drawable/icon_operation" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="84dp"
+                android:layout_height="48dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/imageView4"
+                android:layout_toRightOf="@+id/imageView4"
+                android:src="@drawable/image_upload_icon" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="101dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/linearbackground">
+
+            <Button
+                android:id="@+id/sBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="34dp"
+                android:layout_marginEnd="33dp"
+                android:layout_marginRight="33dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="@string/btn_search_patient" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="224dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/searchName"
+                    android:layout_width="223dp"
+                    android:layout_height="51dp"
+                    android:hint="Name" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="101dp"
+            android:layout_height="91dp"
+            android:layout_marginLeft="150dp"
+            android:src="@drawable/profile_pic" />
+
+        <TextView
+            android:id="@+id/p_name"
+            android:layout_width="290dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/linearbackground"
+            android:gravity="center_horizontal"
+            android:text="Patient Name" />
+
+        <TextView
+            android:id="@+id/p_age"
+            android:layout_width="290dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:background="@drawable/linearbackground"
+            android:gravity="center_horizontal"
+            android:text="Age" />
+
+        <TextView
+            android:id="@+id/p_contactNumber"
+            android:layout_width="290dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/linearbackground"
+            android:gravity="center_horizontal"
+            android:text="Contact Number" />
+
+        <TextView
+            android:id="@+id/p_medical"
+            android:layout_width="290dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:background="@drawable/linearbackground"
+            android:gravity="center_horizontal"
+            android:text="Medical Alert" />
+
+        <TextView
+            android:id="@+id/p_addresss"
+            android:layout_width="290dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/linearbackground"
+            android:gravity="center_horizontal"
+            android:text="Address" />
+
+    </LinearLayout>
+</ScrollView>
