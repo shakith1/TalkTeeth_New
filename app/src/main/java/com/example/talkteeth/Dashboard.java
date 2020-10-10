@@ -6,6 +6,7 @@ import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
@@ -143,22 +144,50 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-
-        Fragment fragment;
- //       FragmentTransaction transaction = getFragmentManager().beginTransaction();
-
         switch (menuItem.getItemId()){
             case R.id.nav_home :
+                setViewPager(0);
+                drawerLayout.closeDrawer((GravityCompat.START));
                 break;
-            case R.id.add_doctor:
-                fragment = new add_doctor();
+            case R.id.nav_doctor:
                 setViewPager(1);
-//                transaction.replace(R.id.content, fragment);
-//                transaction.addToBackStack(null);
-//                transaction.commit();
+                drawerLayout.closeDrawer((GravityCompat.START));
                 break;
+            case R.id.nav_patient:
+                //setViewPager(1);
+                drawerLayout.closeDrawer((GravityCompat.START));
+                break;
+            case R.id.nav_to_do:
+                //setViewPager(1);
+                drawerLayout.closeDrawer((GravityCompat.START));
+                break;
+            case R.id.nav_clinic:
+                setViewPager(4);
+                drawerLayout.closeDrawer((GravityCompat.START));
+                break;
+            case R.id.nav_appoinment:
+                //setViewPager(1);
+                drawerLayout.closeDrawer((GravityCompat.START));
+                break;
+            case R.id.nav_patient_files:
+                //setViewPager(1);
+                drawerLayout.closeDrawer((GravityCompat.START));
+                break;
+            case R.id.pickets_data:
+                setViewPager(5);
+                drawerLayout.closeDrawer((GravityCompat.START));
+                break;
+            case R.id.nav_doctor_details:
+                setViewPager(2);
+                drawerLayout.closeDrawer((GravityCompat.START));
+                break;
+            case R.id.nav_accounting:
+                //setViewPager(1);
+                drawerLayout.closeDrawer((GravityCompat.START));
+                break;
+            default:
+                return true;
         }
         return true;
     }
-
 }
