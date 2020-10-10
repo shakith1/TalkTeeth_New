@@ -97,6 +97,7 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
     private void animateNavigationDrawer() {
 
         drawerLayout.setScrimColor(getResources().getColor(R.color.colorBlue));
+
         //Add any color or remove it to use the default one!
         //To make it transparent use Color.Transparent in side setScrimColor();
         //drawerLayout.setScrimColor(Color.TRANSPARENT);
