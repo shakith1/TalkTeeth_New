@@ -71,7 +71,7 @@ public class Home extends Fragment {
         patient_files.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((Dashboard)getActivity()).setViewPager(6);
+                ((Dashboard)getActivity()).setViewPager(9);
             }
         });
 
@@ -99,8 +99,6 @@ public class Home extends Fragment {
                 ((Dashboard)getActivity()).setViewPager(16);
             }
         });
-
-
 
         return view;
     }

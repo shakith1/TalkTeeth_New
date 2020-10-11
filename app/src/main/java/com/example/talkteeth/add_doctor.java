@@ -52,7 +52,7 @@ public class add_doctor extends Fragment {
 
         date = (TextInputEditText) view.findViewById(R.id.birthday_text);
 
-        //save = (Button) view.findViewById(R.id.add_doctor_save);
+        save = (Button) view.findViewById(R.id.add_doctor_save);
 
         date.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,7 +82,7 @@ public class add_doctor extends Fragment {
             }
         };
 
-      /*  save.setOnClickListener(new View.OnClickListener() {
+        save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
@@ -106,7 +106,7 @@ public class add_doctor extends Fragment {
                 });
                 builder.show();
             }
-        }); */
+        });
 
     }
 }
