@@ -15,6 +15,20 @@
     <string name="share">Share</string>
     <string name="rateus">Rate Us</string>
 
+    <!-- operations related strings-->
+    <string name="op_title">Add Operation</string>
+    <string name="op_date">Date</string>
+    <string name="tooth_details">Tooth Details</string>
+    <string name="op_description"> Description</string>
+    <string name="op_price">Price</string>
+    <string name="op_treatedBy">Treated By</string>
+    <string name="op_tooth">Tooth</string>
+    <string name="btn_tooth">...</string>
+    <string name="btn_op_add">ADD</string>
+    <string name="btn_op_allDetails">All Details</string>
+    <string name="btn_search_patient">Search</string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="add_doctor">Add New Doctor</string>
