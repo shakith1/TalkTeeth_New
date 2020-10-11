@@ -142,6 +142,18 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
             setViewPager(0);
         else if(fragmentNubmer == 5)
             setViewPager(0);
+        else if(fragmentNubmer == 6)
+            setViewPager(9);
+        else if(fragmentNubmer == 7)
+            setViewPager(6);
+        else if(fragmentNubmer == 8)
+            setViewPager(6);
+        else if(fragmentNubmer == 10)
+            setViewPager(9);
+        else if(fragmentNubmer == 11)
+            setViewPager(9);
+        else if(fragmentNubmer == 9)
+            setViewPager(0);
         else
             setViewPager(fragmentNubmer - 1);
 
