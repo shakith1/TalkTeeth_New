@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".edit_patient" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/linearbackground"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="clip_horizontal|center_horizontal"
+            android:text="Edit Patient"
+            android:textSize="23sp"
+            app:fontFamily="@font/cantata_one" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="131dp"
+            android:layout_height="111dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="30dp"
+            android:src="@drawable/profile_pic" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Patient Name"
+            app:boxBackgroundColor="@color/colorBox"
+            app:boxBackgroundMode="filled"
+            app:boxCollapsedPaddingTop="12dp"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pName"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="@null"
+                android:text="Amanda" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:hint="Age"
+            app:boxBackgroundColor="@color/colorBox"
+            app:boxBackgroundMode="filled"
+            app:boxCollapsedPaddingTop="12dp"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pAge"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="@null"
+                android:text="25" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:hint="Contact Number"
+            app:boxBackgroundColor="@color/colorBox"
+            app:boxBackgroundMode="filled"
+            app:boxCollapsedPaddingTop="12dp"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pContact"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="@null"
+                android:text="077 3456213" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:hint="Medical Alert"
+            app:boxBackgroundColor="@color/colorBox"
+            app:boxBackgroundMode="filled"
+            app:boxCollapsedPaddingTop="12dp"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pMedical"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="@null"
+                android:text="Infection in 13th Tooth" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:hint="Address"
+            app:boxBackgroundColor="@color/colorBox"
+            app:boxBackgroundMode="filled"
+            app:boxCollapsedPaddingTop="12dp"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pAddress"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:background="@null"
+                android:text="No, 2/A, Sihnagiri Mw, Colombo" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/patientEdit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbackground"
+            android:text="Edit" />
+    </LinearLayout>
+</ScrollView>
