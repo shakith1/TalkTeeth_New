@@ -72,6 +72,14 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
         adapter.addFragment(new patient_files(), "Patient Files");
         adapter.addFragment(new photo_library(), "Photo Library");
         adapter.addFragment(new edit_patient(), "Edit Patient");
+
+        adapter.addFragment(new add_new_patient(), "Add Patient");
+        adapter.addFragment(new todoList(), "To Do List");
+        adapter.addFragment(new create_new_todo(),"Create new todo");
+        adapter.addFragment(new edit_todoes(), "Edit To Do");
+        adapter.addFragment(new Appointments(), "Appointments");
+        adapter.addFragment(new add_appointments(), "Add Appoitments");
+        adapter.addFragment(new edit_appointments(), "Edit Appointments");
         viewPager.setAdapter(adapter);
     }
 
@@ -154,6 +162,20 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
             setViewPager(9);
         else if(fragmentNubmer == 9)
             setViewPager(0);
+        else if(fragmentNubmer == 12)  //addpatient
+              setViewPager(0);
+        else if(fragmentNubmer == 13)  //todolist
+              setViewPager(0);
+        else if(fragmentNubmer == 14)   //addtodo
+              setViewPager(13);
+        else if(fragmentNubmer == 15)   //edittodo
+              setViewPager(13);
+        else if(fragmentNubmer == 16)   //appointments
+             setViewPager(0);
+        else if(fragmentNubmer == 17)    //add appointments
+              setViewPager(16);
+        else if(fragmentNubmer == 18)    //edit appointments
+               setViewPager(16);
         else
             setViewPager(fragmentNubmer - 1);
 
@@ -172,11 +194,11 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
                 drawerLayout.closeDrawer((GravityCompat.START));
                 break;
             case R.id.nav_patient:
-                //setViewPager(1);
+                setViewPager(12);
                 drawerLayout.closeDrawer((GravityCompat.START));
                 break;
             case R.id.nav_to_do:
-                //setViewPager(1);
+                setViewPager(13);
                 drawerLayout.closeDrawer((GravityCompat.START));
                 break;
             case R.id.nav_clinic:
@@ -184,7 +206,7 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
                 drawerLayout.closeDrawer((GravityCompat.START));
                 break;
             case R.id.nav_appoinment:
-                //setViewPager(1);
+                setViewPager(16);
                 drawerLayout.closeDrawer((GravityCompat.START));
                 break;
             case R.id.nav_patient_files:

@@ -17,7 +17,7 @@ import android.widget.Button;
  */
 public class Home extends Fragment {
 
-    CardView add_doctor,doctor_details,clinic_info,pickers_data, patient_files;
+    CardView add_doctor,doctor_details, clinic_info, pickers_data, patient_files, add_patient,todolist, appoit;
 
     public Home() {
         // Required empty public constructor
@@ -35,6 +35,10 @@ public class Home extends Fragment {
         clinic_info = (CardView) view.findViewById(R.id.clinic_info);
         pickers_data = (CardView) view.findViewById(R.id.pickets_data);
         patient_files = (CardView) view.findViewById(R.id.patient_file);
+
+        add_patient = (CardView) view.findViewById(R.id.new_patient);
+        todolist = (CardView) view.findViewById(R.id.to_do_list);
+        appoit = (CardView) view.findViewById(R.id.appoinments);
 
         add_doctor.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,7 +71,32 @@ public class Home extends Fragment {
         patient_files.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((Dashboard)getActivity()).setViewPager(9);
+                ((Dashboard)getActivity()).setViewPager(6);
+            }
+        });
+
+
+        //***************************************************//
+
+        add_patient.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((Dashboard)getActivity()).setViewPager(12);
+            }
+        });
+
+
+        todolist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((Dashboard)getActivity()).setViewPager(13);
+            }
+        });
+
+        appoit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((Dashboard)getActivity()).setViewPager(16);
             }
         });
 

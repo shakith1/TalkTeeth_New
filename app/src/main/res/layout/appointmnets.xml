@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Appointments">
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/linearbackground">
+
+        <View
+            android:id="@+id/appo_title_view"
+            android:layout_width="264dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ush_view_values"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.011" />
+
+        <TextView
+            android:id="@+id/appo_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/appo_title_text"
+            android:textColor="@android:color/background_light"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.024" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="334dp"
+            android:layout_height="336dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#e6ecff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.414" />
+
+        <CalendarView
+            android:id="@+id/app_calendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:dateTextAppearance="@style/CalenderViewDateCustomText"
+            android:focusedMonthDateColor="#1f1f7a"
+            android:theme="@style/testTheme"
+            android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.416" />
+
+        <Button
+            android:id="@+id/app_add_btn"
+            android:layout_width="53dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ush_add_btn"
+            android:text="+"
+            android:textColor="@android:color/background_light"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.871"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.117" />
+
+        <View
+            android:id="@+id/edit_one_view"
+            android:layout_width="344dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ush_todo_values"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/app_calendarView"
+            app:layout_constraintVertical_bias="0.125" />
+
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="342dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ush_todo_values"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/app_calendarView"
+            app:layout_constraintVertical_bias="0.705" />
+
+        <TextView
+            android:id="@+id/appo_doc_name_first"
+            android:layout_width="168dp"
+            android:layout_height="22dp"
+            android:text="Dr.Sajith Perera"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            app:fontFamily="sans-serif-smallcaps"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_one_view"
+            app:layout_constraintEnd_toEndOf="@+id/edit_one_view"
+            app:layout_constraintHorizontal_bias="0.227"
+            app:layout_constraintStart_toStartOf="@+id/edit_one_view"
+            app:layout_constraintTop_toTopOf="@+id/edit_one_view"
+            app:layout_constraintVertical_bias="0.289" />
+
+        <TextView
+            android:id="@+id/appo_p_date_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15/11/2020"
+            android:textColor="@color/design_default_color_primary_dark"
+            app:fontFamily="sans-serif-smallcaps"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_one_view"
+            app:layout_constraintEnd_toEndOf="@+id/edit_one_view"
+            app:layout_constraintHorizontal_bias="0.254"
+            app:layout_constraintStart_toStartOf="@+id/edit_one_view"
+            app:layout_constraintTop_toTopOf="@+id/edit_one_view"
+            app:layout_constraintVertical_bias="0.804" />
+
+        <TextView
+            android:id="@+id/appo_doc_name_sec"
+            android:layout_width="166dp"
+            android:layout_height="23dp"
+            android:text="Dr. Jayasinghe"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            app:fontFamily="sans-serif-smallcaps"
+            app:layout_constraintBottom_toBottomOf="@+id/view5"
+            app:layout_constraintEnd_toEndOf="@+id/view5"
+            app:layout_constraintHorizontal_bias="0.215"
+            app:layout_constraintStart_toStartOf="@+id/view5"
+            app:layout_constraintTop_toTopOf="@+id/view5"
+            app:layout_constraintVertical_bias="0.194" />
+
+        <TextView
+            android:id="@+id/appo_p_date_sec"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:text="20/11/2020"
+            android:textColor="@color/design_default_color_primary_dark"
+            app:fontFamily="sans-serif-smallcaps"
+            app:layout_constraintBottom_toBottomOf="@+id/view5"
+            app:layout_constraintEnd_toEndOf="@+id/view5"
+            app:layout_constraintHorizontal_bias="0.249"
+            app:layout_constraintStart_toStartOf="@+id/view5"
+            app:layout_constraintTop_toTopOf="@+id/view5"
+            app:layout_constraintVertical_bias="0.714" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
