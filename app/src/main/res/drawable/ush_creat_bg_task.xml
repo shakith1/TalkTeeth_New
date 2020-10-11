@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ush_create_todo_bg_selec_values"
+        android:state_pressed="true"
+     >
+
+    </item>
+
+    <item
+        android:drawable="@drawable/ush_create_todo_bg_selec_values"
+        android:state_focused="true"></item>
+
+    <item
+        android:drawable="@drawable/ush_create_todo_bg_selec_values"
+        android:state_selected="true"></item>
+    <item
+        android:drawable="@drawable/ush_create_todo_bg__not_selec_values"></item>
+
+</selector>

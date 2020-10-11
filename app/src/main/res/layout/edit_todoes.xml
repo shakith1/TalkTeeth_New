@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout_c_todo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".edit_todoes">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <View
+            android:id="@+id/edit_todo_title_view"
+            android:layout_width="260dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ush_view_values"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.011" />
+
+        <TextView
+            android:id="@+id/edit_todo_title"
+            android:layout_width="186dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/edit_todo_edit_title"
+            android:textColor="@android:color/background_light"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/view3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.888" />
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="373dp"
+            android:layout_height="555dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/ush_todo_values"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view3"
+            app:layout_constraintVertical_bias="0.311" />
+
+
+        <EditText
+            android:id="@+id/edit_todo_tname_txt"
+            android:layout_width="316dp"
+            android:layout_height="51dp"
+            android:background="@drawable/ush_creat_bg_task"
+            android:ems="10"
+            android:hint="@string/crt_todo_name"
+            android:inputType="textPersonName"
+            android:paddingLeft="16dp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/view7"
+            app:layout_constraintEnd_toEndOf="@+id/view7"
+            app:layout_constraintHorizontal_bias="0.513"
+            app:layout_constraintStart_toStartOf="@+id/view7"
+            app:layout_constraintTop_toTopOf="@+id/view7"
+            app:layout_constraintVertical_bias="0.111" />
+
+        <TextView
+            android:id="@+id/edit_todo_title_lbl"
+            android:layout_width="93dp"
+            android:layout_height="23dp"
+            android:text="@string/cret_todo_title_lbl"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view7"
+            app:layout_constraintEnd_toEndOf="@+id/view7"
+            app:layout_constraintHorizontal_bias="0.178"
+            app:layout_constraintStart_toStartOf="@+id/view7"
+            app:layout_constraintTop_toTopOf="@+id/view7"
+            app:layout_constraintVertical_bias="0.044" />
+
+        <TextView
+            android:id="@+id/edit_todo_notes_lbl"
+            android:layout_width="117dp"
+            android:layout_height="23dp"
+            android:text="@string/cret_todo_notes"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view7"
+            app:layout_constraintEnd_toEndOf="@+id/view7"
+            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintStart_toStartOf="@+id/view7"
+            app:layout_constraintTop_toTopOf="@+id/view7"
+            app:layout_constraintVertical_bias="0.252" />
+
+        <EditText
+            android:id="@+id/edit_todo_notes_txt"
+            android:layout_width="315dp"
+            android:layout_height="51dp"
+            android:background="@drawable/ush_creat_bg_task"
+            android:ems="10"
+            android:hint="@string/crt_notes_txt"
+            android:inputType="textPersonName"
+            android:paddingLeft="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view7"
+            app:layout_constraintEnd_toEndOf="@+id/view7"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="@+id/view7"
+            app:layout_constraintTop_toTopOf="@+id/view7"
+            app:layout_constraintVertical_bias="0.331" />
+
+
+        <TextView
+            android:id="@+id/edit_todo_date_lbl"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:text="@string/create_todo_date_l"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view7"
+            app:layout_constraintEnd_toEndOf="@+id/view7"
+            app:layout_constraintHorizontal_bias="0.203"
+            app:layout_constraintStart_toStartOf="@+id/view7"
+            app:layout_constraintTop_toTopOf="@+id/view7"
+            app:layout_constraintVertical_bias="0.467" />
+
+
+        <EditText
+            android:id="@+id/edit_todo_date_txt"
+            android:layout_width="312dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ush_creat_bg_task"
+            android:ems="10"
+            android:hint="@string/crt_todo_enter_date"
+            android:inputType="textPersonName"
+            android:paddingLeft="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view7"
+            app:layout_constraintEnd_toEndOf="@+id/view7"
+            app:layout_constraintHorizontal_bias="0.54"
+            app:layout_constraintStart_toStartOf="@+id/view7"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.647" />
+
+
+        <Button
+            android:id="@+id/edit_update_btn"
+            android:layout_width="119dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ush_save_btn"
+            android:text="@string/edit_todo_update"
+            android:textColor="@color/colorBackground"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/view7"
+            app:layout_constraintEnd_toEndOf="@+id/view7"
+            app:layout_constraintStart_toStartOf="@+id/view7"
+            app:layout_constraintTop_toBottomOf="@+id/edit_todo_date_txt"
+            app:layout_constraintVertical_bias="0.104" />
+
+        <Button
+            android:id="@+id/edit_todo_delet_btn"
+            android:layout_width="112dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ush_delete_btn"
+            android:text="@string/edit_todo_del"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.82" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
