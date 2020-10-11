@@ -66,6 +66,12 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
         adapter.addFragment(new edit_doctor(),"Edit Doctor");
         adapter.addFragment(new clinic_info(),"Clinic Info");
         adapter.addFragment(new pickers_data(),"Pickers Data");
+        adapter.addFragment(new add_operation(), "Add Operation");
+        adapter.addFragment(new teethImage(), "Teeth Details");
+        adapter.addFragment(new operation_details(), "Operation Details");
+        adapter.addFragment(new patient_files(), "Patient Files");
+        adapter.addFragment(new photo_library(), "Photo Library");
+        adapter.addFragment(new edit_patient(), "Edit Patient");
         viewPager.setAdapter(adapter);
     }
 
@@ -170,7 +176,7 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
                 drawerLayout.closeDrawer((GravityCompat.START));
                 break;
             case R.id.nav_patient_files:
-                //setViewPager(1);
+                setViewPager(9);
                 drawerLayout.closeDrawer((GravityCompat.START));
                 break;
             case R.id.pickets_data:
