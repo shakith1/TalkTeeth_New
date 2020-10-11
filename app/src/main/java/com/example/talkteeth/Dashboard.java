@@ -80,6 +80,14 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
         adapter.addFragment(new Appointments(), "Appointments");
         adapter.addFragment(new add_appointments(), "Add Appoitments");
         adapter.addFragment(new edit_appointments(), "Edit Appointments");
+
+        adapter.addFragment(new accounts(),"Accounts");//19
+        adapter.addFragment(new balance_sheet(),"Balance Sheet");//20
+        adapter.addFragment(new doctor_income(),"Doctor's Income");//21
+        adapter.addFragment(new add_expenses(),"Add Expenses");//22
+        adapter.addFragment(new search_expenses(),"Search Expenses");//23
+        adapter.addFragment(new expenses_details(),"Expenses Details");//24
+
         viewPager.setAdapter(adapter);
     }
 
@@ -175,6 +183,20 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
               setViewPager(16);
         else if(fragmentNubmer == 18)    //edit appointments
                setViewPager(16);
+
+        else if(fragmentNubmer == 19)
+            setViewPager(0);
+        else if(fragmentNubmer == 20)
+            setViewPager(19);
+        else if(fragmentNubmer == 21)
+            setViewPager(19);
+        else if(fragmentNubmer == 22)
+            setViewPager(19);
+        else if(fragmentNubmer == 23)
+            setViewPager(22);
+        else if(fragmentNubmer == 24)
+            setViewPager(22);
+
         else
             setViewPager(fragmentNubmer - 1);
 
@@ -221,7 +243,7 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
                 drawerLayout.closeDrawer((GravityCompat.START));
                 break;
             case R.id.nav_accounting:
-                //setViewPager(1);
+                setViewPager(19);
                 drawerLayout.closeDrawer((GravityCompat.START));
                 break;
             default:

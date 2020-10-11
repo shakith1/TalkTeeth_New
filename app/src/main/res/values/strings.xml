@@ -66,4 +66,25 @@
     <string name="add_appo_date">Date</string>
     <string name="add_appo_datee">Enter the date</string>
     <string name="edit_appoint">Edit Appointments</string>
+
+    <string-array name="doctors">
+        <item>Doctor Name</item>
+        <item>R.K Wickrama</item>
+        <item>P.J Perera</item>
+        <item>H.m Balasooriya</item>
+    </string-array>
+
+    <string-array name="typesdoc">
+        <item>Type</item>
+        <item>Miscellaneous</item>
+        <item>Lab Work</item>
+        <item>Water Bill</item>
+        <item>Salaries</item>
+        <item>Maintenance</item>
+        <item>Phone Bill</item>
+        <item>Electricity Bill</item>
+        <item>Dental Materials</item>
+        <item>Other</item>
+    </string-array>
+
 </resources>
