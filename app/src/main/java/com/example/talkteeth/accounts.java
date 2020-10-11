@@ -35,21 +35,21 @@ public class accounts extends Fragment {
         balance_sheet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((Dashboard)getActivity()).setViewPager(7);
+                ((Dashboard)getActivity()).setViewPager(20);
             }
         });
 
         doctor_income.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((Dashboard)getActivity()).setViewPager(8);
+                ((Dashboard)getActivity()).setViewPager(21);
             }
         });
 
         add_expenses.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((Dashboard)getActivity()).setViewPager(9);
+                ((Dashboard)getActivity()).setViewPager(22);
             }
         });
 

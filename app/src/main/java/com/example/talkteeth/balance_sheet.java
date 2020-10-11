@@ -116,6 +116,16 @@ public class balance_sheet extends Fragment {
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
 
+                if (date1.getText().toString().matches("")) {
+                    Toast.makeText(getActivity(), "You did not select the date for FROM", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (date2.getText().toString().matches("")) {
+                    Toast.makeText(getActivity(), "You did not select the date for TO", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 builder.setCancelable(true);
                 builder.setTitle("Balance Sheet");
                 builder.setMessage("Balance = Rs. 1985000.00" + "\n" + "Expenses = Rs. 15000.00" + "\n" + "Income = Rs. 200000.00");

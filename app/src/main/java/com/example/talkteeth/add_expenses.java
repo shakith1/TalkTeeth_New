@@ -53,14 +53,14 @@ public class add_expenses extends Fragment{
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((Dashboard)getActivity()).setViewPager(10);
+                ((Dashboard)getActivity()).setViewPager(23);
             }
         });
 
         viewbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((Dashboard)getActivity()).setViewPager(11);
+                ((Dashboard)getActivity()).setViewPager(24);
             }
         });
 
@@ -130,7 +130,7 @@ public class add_expenses extends Fragment{
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        ((Dashboard) getActivity()).setViewPager(11);
+                        ((Dashboard) getActivity()).setViewPager(24);
                     }
                 });
                 builder.show();
