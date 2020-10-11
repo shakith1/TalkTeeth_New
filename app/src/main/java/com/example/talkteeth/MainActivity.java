@@ -13,16 +13,21 @@ import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
 
     private static int SPLASH_SCREEN = 5000;
 
     Animation topAnimation,bottomAnimation;
     ImageView image;
     TextView logo,tag;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,5 +62,9 @@ public class MainActivity extends AppCompatActivity {
 
             }
         },SPLASH_SCREEN);
+
+
     }
+
+
 }
